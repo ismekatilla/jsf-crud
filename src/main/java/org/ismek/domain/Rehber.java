@@ -38,4 +38,13 @@ public class Rehber {
     public void setTelefon(String telefon) {
         this.telefon = telefon;
     }
+
+    @Override
+    public String toString() {
+        return "Rehber{" +
+                "id=" + id +
+                ", isim='" + isim + '\'' +
+                ", telefon='" + telefon + '\'' +
+                '}';
+    }
 }

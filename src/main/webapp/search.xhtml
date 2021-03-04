@@ -12,7 +12,7 @@
             <h:inputHidden value="#{rehberMB.id}"></h:inputHidden>
             <div class="form-group">
                 <div class="col-sm-2"></div>
-                <h2 style="text-align: center" class="col-sm-4">Edit Your Record</h2>
+                <h2 style="text-align: center" class="col-sm-4">Search</h2>
             </div>
             <hr/>
             <div class="form-group">
@@ -22,15 +22,9 @@
                 </div>
             </div>
             <div class="form-group">
-                <h:outputLabel for="email" class="control-label col-sm-2">Telefon</h:outputLabel>
-                <div class="col-sm-4">
-                    <h:inputText id="email-id" value="#{rehberMB.telefon}" class="form-control"/>
-                </div>
-            </div>
-            <div class="form-group">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-4">
-                    <center><h:commandButton value="Update" action="#{rehberMB.update()}" class="btn btn-primary" style="width: 80px;"></h:commandButton></center>
+                    <center><h:commandButton value="Update" action="#{rehberMB.ara()}" class="btn btn-primary" style="width: 80px;"></h:commandButton></center>
                 </div>
             </div>
         </h:form>

@@ -41,16 +41,16 @@
                     <f:facet name="header">Email ID</f:facet>
                     <h:outputText value="#{row.telefon}"/>
                 </h:column>
-                <!--<h:column>-->
-                    <!--<f:facet name="header">Update</f:facet>-->
-                    <!--<h:commandButton action = "#{rehberMB.edit(row.id)}" value="Update" class="btn btn-primary">-->
-                    <!--</h:commandButton>-->
-                <!--</h:column>-->
-                <!--<h:column>-->
-                    <!--<f:facet name="header">Delete</f:facet>-->
-                    <!--<h:commandButton action = "#{rehberMB.delete(row.id)}" value="Delete" class="btn btn-danger">-->
-                    <!--</h:commandButton>-->
-                <!--</h:column>-->
+                <h:column>
+                    <f:facet name="header">Update</f:facet>
+                    <h:commandButton action = "#{rehberMB.edit(row.id)}" value="Update" class="btn btn-primary">
+                    </h:commandButton>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Delete</f:facet>
+                    <h:commandButton action = "#{rehberMB.delete(row.id)}" value="Delete" class="btn btn-danger">
+                    </h:commandButton>
+                </h:column>
             </h:dataTable>
             <center><h:commandButton action = "create.xhtml?faces-redirect=true" value="Create New User" class="btn btn-success"></h:commandButton> </center>
         </h:form>
